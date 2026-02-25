@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VexoxUB</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFfklEQVR4nI2XzXIjSRHHf5nV8ocsWZbHOx87BBx2Y2O8HObGgYi9E3AguM4DwANw2wu8AK8xdyLYC0+whz2wBzDBDksEBMz42+2RbcnqzOTQ1VJbI3mmIkrd6q+s/y+zsrLkGewIqID+G76hbgIQ4FEfA4io7+XDyiYyP4rUH9N8LQL4BH7i9bdNnsPj7+Hr5qVUPywBYRBed4/65cb4qkFI/hEBUVAFKUCb92wuJj6DnxYJdhJoAl0TSesghYhUEXEDPo6oAPFs9L3yc9dajGyKFJugSUQsIiYQ0wg3sA7syCP4b0dEN0H7qmkgor8QGf7R/ew4ws4jpjcRldWjbkgsG0uDW6QWJJsixa5IZ0+k+KXq8KuI87cRfunuY7AqwouhSKcroruq+jORIcCLwQDKcveriPOpWRjELVRWW5VsXFqDkPYgErAGqQ/FE9Xi5yLD/M0hIvxZ5OLCXa/Biweq6Vequ43hJwcHALzY3+fbskwjVZ+4m0Wo15a8Jb8xPEOf1euGiA5V01OR1Hz3t8Dr/X0oyx1S4k/u57oB8g1cArwsy/oB4MnBAc9h+yOR1IOiAym1InyZ+7N66UDqQfFQJD2H7UbU6/19XpYlAH+BtxsgehMR44ilsfViMOCxSBqqpg0RTTmyW76mfa7Z9436R1n9sjbJdvWyDjQ/gNEyCp9Df6+mkDqQtB5Em0RjXHSuPu2JpM+hv0z9KxiVETaKML0BK92rkwhbReGhSBpkCkVrAO2e57tsiOiOanp4j/qTCCvd/QZMJxE+Aj+NsL+voLAPvT2RtJUpZFfc6Y3vtyA9EEn70Ful/izCr8DGEaa3+eTC3Y7eQ2FHNa3XsaCpznIo0Pxfz+rv8/1xtnUTYbfgWtVz3K/ATiJsVSw0FHqQ1kCLjLzpa6CN75+tUP8djE4i7ApsDD6FUIOo6pTrDYUT1atVFIaqaVNEO3Cnb+bIX+X7M9Xro6z+Oqu/BVerFwjaFA7dfRmFZy0K67Vh6YCsf4D6I3c7ibBRrdwbu+r1iVtNwS7cqzcR9r/3UNgSSZuQNiFt5WurfH+oenWYCU8ibJpXRYPQZr03iCn4CPzY3V672zIKvx8MensiaRtSV0S7Irqd1f9uMFiq/rW7HbtXI7DbLLZZ6pW8ujWDmERYGVG9cbdXIqNlkfxYNT1QTQMoBlA8UE2PVdOyZ/8lMjp09zLCJhFeZePNqjoj0BQeFdh1hJ+5V4crKHy5vd17JJL2VNNeRv/l9vZK35+5V9cRVoHZXDBAFMz/4IABU7ARyGmE/UNk9Bn0FpX9IKXUcxcBdlR18T7AP2F0mpPOtBbXCJ0TaNmPmFO4My2XUfhNv9/9UUrFD1Mqft3vd5epbyed6dzvtAjMarXZxRYFvwI7i7DvcnJabE9V9ek96puUe9uqL+Ou/ZgVi/dROIywC9XrRQpfdLtrX3S7a4vqL1WvT7L6ce37pervEHgfheOcnD6knbj76QeoB5ANeNV6d1ZY5tVNN6HYFel8ktLaj1PqDN277dKtaW31fzObfm82PY24vc5zvwLPBO4M4B3/tSi8k6KPPoDCobvnlLuofma0dXxnAO1YoImFmwg/d7c3EXasetWOhbb60zrl2nmO/JbvY9H3TSuWqWjlhXaKtqOIqu8uH+X7f/j4YyCX8cB/8rQdzbGH3aN+1QBmNX/kHVGmYKfu2gEZi1xSltt/hbcAL8uy/3XE5VFEdZqzXp73s43MvXu5hUCcXW+q3VQXILoOqSdSbInoWl2KzdotxFWEjyKqSU7p7ehftpsaw6dLXdCmQKZg4BPAI7iJIImoQOSHxCNimmlZHfH3+v6O0qYtTsk2hVx4aqsgne/HmOcOny+3xAr1Y/i0Of8/Pw01d3yqUXIAAAAASUVORK5CYII=">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --red-bright: #ff3c3c;
+  --bg: #0a0000;
+  --surface: rgba(20,2,2,0.72);
+  --surface-hover: rgba(35,5,5,0.88);
+  --border: rgba(180,30,30,0.22);
+  --border-bright: rgba(255,80,80,0.45);
+  --text: #fff;
+  --text-sub: rgba(255,180,180,0.7);
+  --font-title: 'Fredoka One', cursive;
+  --font-body: 'Nunito', sans-serif;
+}
+
+html, body {
+  width: 100%; height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  font-family: var(--font-body);
+  color: var(--text);
+}
+
+#bg-canvas {
+  position: fixed; inset: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.45s;
+}
+
+/* SCREENS */
+.screen {
+  position: fixed; inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+.screen.active { display: flex; }
+.screen.fading-in  { animation: fadeIn  0.32s ease forwards; }
+.screen.fading-out { animation: fadeOut 0.22s ease forwards; pointer-events: none; }
+
+@keyframes fadeIn  { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+
+/* HOME */
+#home-screen { flex-direction: column; pointer-events: none; }
+
+.title-container { text-align: center; }
+
+.title {
+  font-family: var(--font-title);
+  font-size: clamp(4rem, 12vw, 10rem);
+  color: #fff;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  position: relative;
+  text-shadow: 0 0 20px rgba(255,60,60,0.9), 0 0 60px rgba(255,30,30,0.6), 0 0 120px rgba(200,0,0,0.4);
+}
+.title span { display: inline-block; animation: floatLetter 3s ease-in-out infinite; }
+.title span:nth-child(1){animation-delay:0.0s}
+.title span:nth-child(2){animation-delay:0.1s}
+.title span:nth-child(3){animation-delay:0.2s}
+.title span:nth-child(4){animation-delay:0.3s}
+.title span:nth-child(5){animation-delay:0.4s}
+.title span:nth-child(6){animation-delay:0.5s}
+.title span:nth-child(7){animation-delay:0.6s}
+
+@keyframes floatLetter {
+  0%,100%{ transform:translateY(0) scale(1); }
+  50%    { transform:translateY(-12px) scale(1.04); }
+}
+.title::before {
+  content:'VexoxUB'; font-family:var(--font-title); font-size:inherit;
+  letter-spacing:0.05em; position:absolute; top:0; left:0; right:0;
+  -webkit-text-stroke:3px rgba(255,100,100,0.5); color:transparent; filter:blur(1px);
+}
+.subtitle {
+  font-family:var(--font-body);
+  font-size:clamp(0.8rem, 2vw, 1.2rem);
+  color:var(--text-sub);
+  letter-spacing:0.4em;
+  text-transform:uppercase;
+  margin-top:1rem;
+}
+
+/* SIDEBAR */
+#sidebar {
+  position: fixed;
+  bottom: 24px; left: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(10,0,0,0.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  width: 44px;
+  height: 44px;
+  transition:
+    width 0.28s cubic-bezier(0.4,0,0.2,1),
+    border-color 0.25s,
+    background 0.25s,
+    box-shadow 0.25s;
+}
+.nav-item:hover, .nav-item.active-nav {
+  width: 122px;
+  border-color: var(--border-bright);
+  background: var(--surface-hover);
+  box-shadow: 0 0 18px rgba(200,30,30,0.28), 0 0 6px rgba(255,80,80,0.15);
+}
+
+.nav-icon {
+  min-width: 44px; width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.nav-icon svg {
+  width: 20px; height: 20px;
+  stroke: rgba(255,170,170,0.8); fill: none;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+  transition: stroke 0.2s;
+}
+.nav-item:hover .nav-icon svg,
+.nav-item.active-nav .nav-icon svg { stroke: #fff; }
+
+.nav-label {
+  font-family: var(--font-body);
+  font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: rgba(255,200,200,0.9);
+  white-space: nowrap;
+  opacity: 0; transform: translateX(-6px);
+  transition: opacity 0.2s 0.06s, transform 0.2s 0.06s;
+  padding-right: 14px;
+  user-select: none;
+}
+.nav-item:hover .nav-label,
+.nav-item.active-nav .nav-label { opacity:1; transform:translateX(0); }
+
+/* INNER SCREENS */
+.inner-screen {
+  width:100%; height:100%;
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+  padding:60px 40px 60px;
+  overflow-y:auto;
+}
+
+.screen-header { text-align:center; margin-bottom:36px; }
+.screen-header h1 {
+  font-family:var(--font-title);
+  font-size:clamp(2.4rem, 6vw, 4.5rem);
+  color:#fff;
+  text-shadow:0 0 16px rgba(255,50,50,0.8), 0 0 50px rgba(200,20,20,0.5);
+  letter-spacing:0.05em;
+}
+.screen-header p {
+  font-size:0.83rem; color:var(--text-sub);
+  letter-spacing:0.3em; text-transform:uppercase; margin-top:6px;
+}
+
+.glass-card {
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:18px;
+  backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+  padding:0 20px;
+  width:100%; max-width:700px;
+  box-shadow:0 8px 40px rgba(0,0,0,0.4), 0 0 24px rgba(120,0,0,0.1);
+}
+
+/* GAMES */
+.search-wrap { width:100%; max-width:900px; margin-bottom:28px; position:relative; }
+.search-wrap svg {
+  position:absolute; left:16px; top:50%; transform:translateY(-50%);
+  width:18px; height:18px;
+  stroke:rgba(255,120,120,0.55); fill:none; stroke-width:2; stroke-linecap:round;
+  pointer-events:none;
+}
+.search-input {
+  width:100%;
+  padding:13px 18px 13px 46px;
+  background:var(--surface); border:1px solid var(--border); border-radius:14px;
+  color:#fff; font-family:var(--font-body); font-size:1rem; font-weight:600;
+  outline:none; backdrop-filter:blur(14px);
+  transition:border-color 0.2s, box-shadow 0.2s;
+}
+.search-input::placeholder { color:rgba(255,150,150,0.32); }
+.search-input:focus { border-color:var(--border-bright); box-shadow:0 0 16px rgba(200,30,30,0.2); }
+
+/* Tag filter bar */
+#tag-filters {
+  display:flex; flex-wrap:wrap; gap:8px;
+  width:100%; max-width:900px;
+  margin-bottom:20px;
+}
+.tag-btn {
+  padding:6px 14px;
+  border-radius:20px;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--text-sub);
+  font-family:var(--font-body);
+  font-size:0.75rem; font-weight:700;
+  letter-spacing:0.08em; text-transform:uppercase;
+  cursor:pointer;
+  transition:border-color 0.2s, background 0.2s, color 0.2s;
+  user-select:none;
+}
+.tag-btn:hover { border-color:var(--border-bright); color:#fff; }
+.tag-btn.active {
+  background:rgba(180,20,20,0.35);
+  border-color:var(--border-bright);
+  color:#fff;
+  box-shadow:0 0 10px rgba(200,30,30,0.2);
+}
+#games-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap:16px;
+  width:100%; max-width:900px;
+}
+
+.game-card {
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  cursor:pointer;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+}
+.game-card:hover {
+  border-color:var(--border-bright);
+  transform:translateY(-4px);
+  box-shadow:0 12px 40px rgba(0,0,0,0.5), 0 0 20px rgba(180,20,20,0.2);
+}
+
+.game-thumb {
+  width:100%; aspect-ratio:16/9;
+  background:linear-gradient(135deg, rgba(60,5,5,0.9), rgba(20,0,0,0.95));
+  display:flex; align-items:center; justify-content:center;
+  position:relative; overflow:hidden;
+}
+.game-thumb-icon {
+  width:40px; height:40px;
+  stroke:rgba(255,100,100,0.35); fill:none; stroke-width:1.4; stroke-linecap:round;
+}
+.game-thumb img {
+  width:100%; height:100%; object-fit:cover; display:block;
+}
+.game-thumb-play {
+  position:absolute; inset:0;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(0,0,0,0);
+  transition:background 0.2s;
+}
+.game-card:hover .game-thumb-play { background:rgba(0,0,0,0.45); }
+.game-thumb-play svg {
+  width:36px; height:36px;
+  fill:rgba(255,255,255,0); stroke:rgba(255,255,255,0);
+  transition:fill 0.2s, stroke 0.2s;
+  filter:drop-shadow(0 0 8px rgba(255,60,60,0.8));
+}
+.game-card:hover .game-thumb-play svg { fill:rgba(255,255,255,0.92); stroke:rgba(255,255,255,0.92); }
+
+.game-info { padding:12px 14px 14px; }
+.game-info h3 {
+  font-family:var(--font-title);
+  font-size:1rem; letter-spacing:0.03em;
+  color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.game-info p {
+  font-size:0.74rem; color:var(--text-sub);
+  margin-top:3px; letter-spacing:0.05em;
+}
+
+/* Tag badge */
+.game-tag {
+  display:inline-block;
+  font-size:0.65rem; font-weight:800; letter-spacing:0.1em; text-transform:uppercase;
+  padding:2px 8px; border-radius:20px; margin-top:6px;
+  background:rgba(180,20,20,0.25); border:1px solid var(--border);
+  color:var(--text-sub);
+}
+
+/* Empty state */
+.games-empty { text-align:center; padding:50px 20px; width:100%; max-width:900px; }
+.games-empty .empty-icon {
+  width:60px; height:60px; margin:0 auto 18px;
+  opacity:0.3; stroke:var(--red-bright); fill:none; stroke-width:1.4; stroke-linecap:round;
+  display:block;
+}
+.games-empty h3 { font-family:var(--font-title); font-size:1.6rem; color:rgba(255,120,120,0.45); margin-bottom:8px; }
+.games-empty p  { font-size:0.83rem; color:rgba(255,150,150,0.28); letter-spacing:0.12em; text-transform:uppercase; }
+
+/* Games count */
+#games-count {
+  width:100%; max-width:900px;
+  font-size:0.75rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase;
+  color:rgba(255,120,120,0.4);
+  margin-bottom:14px;
+  padding-left:2px;
+}
+
+/* GAME OVERLAY */
+#game-overlay {
+  position:fixed; inset:0; z-index:200;
+  background:rgba(0,0,0,0.96);
+  display:none;
+  flex-direction:column;
+}
+#game-overlay.open { display:flex; animation:fadeIn 0.25s ease forwards; }
+
+#overlay-topbar {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 16px;
+  background:rgba(10,0,0,0.85);
+  border-bottom:1px solid var(--border);
+  flex-shrink:0;
+  backdrop-filter:blur(16px);
+  z-index:1;
+}
+#overlay-title {
+  font-family:var(--font-title);
+  font-size:1.1rem; letter-spacing:0.04em;
+  color:#fff;
+  text-shadow:0 0 12px var(--red-bright);
+}
+#overlay-close {
+  display:flex; align-items:center; gap:8px;
+  cursor:pointer;
+  padding:7px 14px; border-radius:10px;
+  border:1px solid var(--border);
+  background:rgba(120,10,10,0.25);
+  color:rgba(255,180,180,0.85);
+  font-family:var(--font-body); font-size:0.8rem; font-weight:700;
+  letter-spacing:0.08em; text-transform:uppercase;
+  transition:background 0.2s, border-color 0.2s;
+}
+#overlay-close:hover { background:rgba(180,20,20,0.45); border-color:var(--border-bright); color:#fff; }
+#overlay-close svg { width:14px; height:14px; stroke:currentColor; fill:none; stroke-width:2.5; stroke-linecap:round; }
+
+#game-frame {
+  flex:1; width:100%; border:none;
+  background:#000;
+  transition: opacity 0.3s;
+}
+
+#game-loading {
+  position:absolute;
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  display:flex; flex-direction:column; align-items:center; gap:16px;
+  color:rgba(255,180,180,0.6);
+  font-family:var(--font-body); font-size:0.9rem;
+  pointer-events:none;
+}
+.game-spinner {
+  width:40px; height:40px;
+  border:3px solid rgba(180,20,20,0.2);
+  border-top-color:var(--red-bright);
+  border-radius:50%;
+  animation:spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform:rotate(360deg); } }
+
+/* CREDITS */
+.credit-line {
+  display:flex; align-items:center; gap:18px;
+  padding:22px 0; border-bottom:1px solid var(--border);
+}
+.credit-line:last-child { border-bottom:none; }
+.credit-icon {
+  width:46px; height:46px; border-radius:12px;
+  background:rgba(140,15,15,0.18); border:1px solid var(--border);
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
+}
+.credit-icon svg { width:22px; height:22px; stroke:rgba(255,155,155,0.9); fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.credit-text h3 { font-family:var(--font-title); font-size:1.2rem; color:#fff; letter-spacing:0.04em; }
+.credit-text p  { font-size:0.8rem; color:var(--text-sub); margin-top:3px; letter-spacing:0.06em; }
+
+/* SETTINGS */
+.settings-section { width:100%; max-width:700px; margin-bottom:22px; }
+.settings-label {
+  font-size:0.7rem; font-weight:800; letter-spacing:0.22em; text-transform:uppercase;
+  color:rgba(255,90,90,0.5); margin-bottom:10px; padding-left:4px;
+}
+.setting-row {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:15px 20px; border-bottom:1px solid var(--border); gap:20px;
+}
+.setting-row:last-child { border-bottom:none; }
+.setting-info h4 { font-weight:700; font-size:0.94rem; color:#fff; }
+.setting-info p  { font-size:0.77rem; color:var(--text-sub); margin-top:2px; }
+
+/* Toggle */
+.toggle { position:relative; width:46px; height:26px; flex-shrink:0; }
+.toggle input { opacity:0; width:0; height:0; position:absolute; }
+.toggle-slider {
+  position:absolute; inset:0;
+  background:rgba(70,8,8,0.7); border:1px solid var(--border); border-radius:50px;
+  cursor:pointer; transition:background 0.25s, border-color 0.25s;
+}
+.toggle-slider::before {
+  content:''; position:absolute;
+  width:18px; height:18px; left:3px; top:3px;
+  background:rgba(255,130,130,0.55); border-radius:50%;
+  transition:transform 0.25s, background 0.25s;
+}
+.toggle input:checked + .toggle-slider { background:rgba(170,25,25,0.7); border-color:var(--border-bright); }
+.toggle input:checked + .toggle-slider::before { transform:translateX(20px); background:#fff; }
+
+/* Select */
+.setting-select {
+  background:rgba(18,2,2,0.8); border:1px solid var(--border); border-radius:9px;
+  color:rgba(255,200,200,0.9); font-family:var(--font-body); font-size:0.84rem; font-weight:600;
+  padding:7px 12px; outline:none; cursor:pointer; transition:border-color 0.2s; flex-shrink:0;
+}
+.setting-select:focus { border-color:var(--border-bright); }
+.setting-select option { background:#180000; }
+
+/* Range slider */
+.setting-slider {
+  -webkit-appearance:none; width:110px; height:4px;
+  border-radius:4px; background:rgba(140,15,15,0.45); outline:none; cursor:pointer; flex-shrink:0;
+}
+.setting-slider::-webkit-slider-thumb {
+  -webkit-appearance:none; width:16px; height:16px; border-radius:50%;
+  background:var(--red-bright); box-shadow:0 0 8px rgba(255,60,60,0.55); cursor:pointer;
+}
+.setting-slider::-moz-range-thumb {
+  width:16px; height:16px; border-radius:50%;
+  background:var(--red-bright); border:none; cursor:pointer;
+}
+
+/* Swatches */
+.color-swatches { display:flex; gap:8px; flex-shrink:0; }
+.swatch {
+  width:24px; height:24px; border-radius:6px;
+  border:2px solid transparent; cursor:pointer;
+  transition:border-color 0.18s, transform 0.14s;
+}
+.swatch:hover { transform:scale(1.15); }
+.swatch.selected { border-color:#fff; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track { background:transparent; }
+::-webkit-scrollbar-thumb { background:rgba(180,30,30,0.3); border-radius:10px; }
+
+.divider {
+  width:100%; height:1px;
+  background:linear-gradient(90deg, transparent, var(--border-bright), transparent);
+  margin:2px 0;
+}
+</style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- HOME -->
+<div id="home-screen" class="screen active fading-in">
+  <div class="title-container">
+    <div class="title">
+      <span>V</span><span>e</span><span>x</span><span>o</span><span>x</span><span>U</span><span>B</span>
+    </div>
+    <div class="subtitle">enter the vex</div>
+  </div>
+</div>
+
+<!-- GAMES -->
+<div id="games-screen" class="screen">
+  <div class="inner-screen">
+    <div class="screen-header">
+      <h1>Games</h1>
+      <p>Ultimate Freedom</p>
+    </div>
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+      <input class="search-input" type="text" id="game-search" placeholder="Search games…" />
+    </div>
+    <div id="tag-filters">
+      <div class="tag-btn active" data-tag="all">All</div>
+      <div class="tag-btn" data-tag="arcade">Arcade</div>
+      <div class="tag-btn" data-tag="platformer">Platformer</div>
+      <div class="tag-btn" data-tag="action">Action</div>
+      <div class="tag-btn" data-tag="horror">Horror</div>
+      <div class="tag-btn" data-tag="racing">Racing</div>
+      <div class="tag-btn" data-tag="adventure">Adventure</div>
+      <div class="tag-btn" data-tag="sandbox">Sandbox</div>
+      <div class="tag-btn" data-tag="sports">Sports</div>
+      <div class="tag-btn" data-tag="puzzle">Puzzle</div>
+      <div class="tag-btn" data-tag="strategy">Strategy</div>
+      <div class="tag-btn" data-tag="music">Music</div>
+      <div class="tag-btn" data-tag="io">IO</div>
+    </div>
+    <div id="games-count"></div>
+    <div id="games-grid"></div>
+    <div class="games-empty" id="games-empty" style="display:none;">
+      <svg class="empty-icon" viewBox="0 0 24 24">
+        <rect x="2" y="6" width="20" height="13" rx="3.5"/>
+        <line x1="7" y1="12" x2="11" y2="12"/><line x1="9" y1="10" x2="9" y2="14"/>
+        <circle cx="16" cy="11.5" r="1" fill="rgba(255,80,80,0.4)" stroke="none"/>
+        <circle cx="18" cy="13.5" r="1" fill="rgba(255,80,80,0.4)" stroke="none"/>
+      </svg>
+      <h3 id="empty-title">No games found</h3>
+      <p id="empty-sub">try a different search</p>
+    </div>
+  </div>
+</div>
+
+<!-- GAME OVERLAY -->
+<div id="game-overlay">
+  <div id="overlay-topbar">
+    <span id="overlay-title">Game</span>
+    <button id="overlay-close">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      Exit Game
+    </button>
+  </div>
+  <div id="game-loading">
+    <div class="game-spinner"></div>
+    <span>Loading game…</span>
+  </div>
+  <iframe id="game-frame" allowfullscreen allow="fullscreen; autoplay; gamepad" sandbox="allow-scripts allow-same-origin allow-forms allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-downloads"></iframe>
+</div>
+
+<!-- CREDITS -->
+<div id="credits-screen" class="screen">
+  <div class="inner-screen">
+    <div class="screen-header">
+      <h1>Credits</h1>
+      <p>the people behind the vex</p>
+    </div>
+    <div class="glass-card">
+      <div class="credit-line">
+        <div class="credit-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </div>
+        <div class="credit-text">
+          <h3>Made by Math Notes</h3>
+          <p>Design, development &amp; concept</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="credit-line">
+        <div class="credit-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="11" rx="3.5"/><line x1="7" y1="12" x2="11" y2="12"/><line x1="9" y1="10" x2="9" y2="14"/><circle cx="16" cy="11.5" r="1" fill="rgba(255,150,150,0.8)" stroke="none"/><circle cx="18" cy="13.5" r="1" fill="rgba(255,150,150,0.8)" stroke="none"/></svg>
+        </div>
+        <div class="credit-text">
+          <h3>Games by Gn-Math Assets</h3>
+          <p>All game content &amp; assets</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="credit-line">
+        <div class="credit-icon">
+          <svg viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><line x1="11.8" y1="11.2" x2="21" y2="3"/><line x1="18.5" y1="5.5" x2="21" y2="8"/><line x1="15.5" y1="8" x2="17.5" y2="10"/></svg>
+        </div>
+        <div class="credit-text">
+          <h3>VexoxUB Platform</h3>
+          <p>Version 1.0 &nbsp;·&nbsp; Free to play</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SETTINGS -->
+<div id="settings-screen" class="screen">
+  <div class="inner-screen">
+    <div class="screen-header">
+      <h1>Settings</h1>
+      <p>customise your experience</p>
+    </div>
+
+    <div class="settings-section">
+      <div class="settings-label">Appearance</div>
+      <div class="glass-card">
+        <div class="setting-row">
+          <div class="setting-info">
+            <h4>Accent Colour</h4>
+            <p>Main theme highlight colour</p>
+          </div>
+          <div class="color-swatches" id="accent-swatches">
+            <div class="swatch selected" style="background:#c0392b;" data-hue="0"></div>
+            <div class="swatch" style="background:#8e44ad;" data-hue="280"></div>
+            <div class="swatch" style="background:#1a6b8a;" data-hue="200"></div>
+            <div class="swatch" style="background:#1e8449;" data-hue="140"></div>
+          </div>
+        </div>
+        <div class="setting-row">
+          <div class="setting-info">
+            <h4>UI Transparency</h4>
+            <p>Sidebar and card backdrop opacity</p>
+          </div>
+          <select class="setting-select" id="ui-transparency">
+            <option value="0.25">Low</option>
+            <option value="0.55" selected>Medium</option>
+            <option value="0.85">High</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <div class="settings-label">Home Particles</div>
+      <div class="glass-card">
+        <div class="setting-row">
+          <div class="setting-info"><h4>Particle Effects</h4><p>Enable animated background particles</p></div>
+          <label class="toggle"><input type="checkbox" id="tog-particles" checked><span class="toggle-slider"></span></label>
+        </div>
+        <div class="setting-row">
+          <div class="setting-info"><h4>Mouse Repulsion</h4><p>Particles scatter away from cursor</p></div>
+          <label class="toggle"><input type="checkbox" id="tog-repulsion" checked><span class="toggle-slider"></span></label>
+        </div>
+        <div class="setting-row">
+          <div class="setting-info"><h4>Mouse Trail</h4><p>Ember trail follows cursor movement</p></div>
+          <label class="toggle"><input type="checkbox" id="tog-trail" checked><span class="toggle-slider"></span></label>
+        </div>
+        <div class="setting-row">
+          <div class="setting-info"><h4>Connection Lines</h4><p>Draw lines between nearby particles</p></div>
+          <label class="toggle"><input type="checkbox" id="tog-lines" checked><span class="toggle-slider"></span></label>
+        </div>
+        <div class="setting-row">
+          <div class="setting-info"><h4>Particle Density</h4><p>Number of particles on screen</p></div>
+          <select class="setting-select" id="sel-density">
+            <option value="80">Low</option>
+            <option value="250" selected>Medium</option>
+            <option value="500">High</option>
+          </select>
+        </div>
+        <div class="setting-row">
+          <div class="setting-info"><h4>Particle Speed</h4><p>How fast particles drift</p></div>
+          <input type="range" class="setting-slider" id="sli-speed" min="1" max="10" value="5">
+        </div>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <div class="settings-label">Audio</div>
+      <div class="glass-card">
+        <div class="setting-row">
+          <div class="setting-info"><h4>UI Sounds</h4><p>Click and hover sound effects</p></div>
+          <label class="toggle"><input type="checkbox" id="tog-sounds"><span class="toggle-slider"></span></label>
+        </div>
+        <div class="setting-row">
+          <div class="setting-info"><h4>Master Volume</h4><p>Overall sound level</p></div>
+          <input type="range" class="setting-slider" id="sli-volume" min="0" max="10" value="7">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SIDEBAR -->
+<nav id="sidebar">
+  <div class="nav-item active-nav" data-target="home">
+    <div class="nav-icon">
+      <svg viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5"/><rect x="5" y="11" width="14" height="10" rx="1.5"/><rect x="9" y="15" width="6" height="6" rx="0.5"/></svg>
+    </div>
+    <span class="nav-label">Home</span>
+  </div>
+  <div class="nav-item" data-target="games">
+    <div class="nav-icon">
+      <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="11" rx="3.5"/><line x1="7" y1="12" x2="11" y2="12"/><line x1="9" y1="10" x2="9" y2="14"/><circle cx="16" cy="11.5" r="1" fill="rgba(255,180,180,0.7)" stroke="none"/><circle cx="18" cy="13.5" r="1" fill="rgba(255,180,180,0.7)" stroke="none"/></svg>
+    </div>
+    <span class="nav-label">Games</span>
+  </div>
+  <div class="nav-item" data-target="credits">
+    <div class="nav-icon">
+      <svg viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><line x1="11.8" y1="11.2" x2="21" y2="3"/><line x1="18.5" y1="5.5" x2="21" y2="8"/><line x1="15.5" y1="8" x2="17.5" y2="10"/></svg>
+    </div>
+    <span class="nav-label">Credits</span>
+  </div>
+  <div class="nav-item" data-target="settings">
+    <div class="nav-icon">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+    </div>
+    <span class="nav-label">Settings</span>
+  </div>
+</nav>
+
+<script>
+/* ── NAVIGATION ── */
+const allScreens = {
+  home:     document.getElementById('home-screen'),
+  games:    document.getElementById('games-screen'),
+  credits:  document.getElementById('credits-screen'),
+  settings: document.getElementById('settings-screen'),
+};
+const navItems = document.querySelectorAll('.nav-item[data-target]');
+let current = 'home';
+let gamesLoaded = false;
+
+function goTo(target) {
+  if (target === current) return;
+  const prev = allScreens[current];
+  const next = allScreens[target];
+
+  bgCanvas.style.opacity = target === 'home' ? '1' : '0';
+
+  prev.classList.add('fading-out');
+  setTimeout(() => {
+    prev.classList.remove('active','fading-out');
+    next.classList.add('active','fading-in');
+    setTimeout(() => next.classList.remove('fading-in'), 350);
+  }, 230);
+
+  navItems.forEach(n => n.classList.toggle('active-nav', n.dataset.target === target));
+  current = target;
+
+  // Lazy-load games on first visit
+  if (target === 'games' && !gamesLoaded) {
+    gamesLoaded = true;
+    loadGames();
+  }
+}
+navItems.forEach(n => n.addEventListener('click', () => goTo(n.dataset.target)));
+
+/* ── PARTICLES ── */
+const bgCanvas = document.getElementById('bg-canvas');
+const ctx = bgCanvas.getContext('2d');
+let W = bgCanvas.width = window.innerWidth;
+let H = bgCanvas.height = window.innerHeight;
+let mouse = { x: W/2, y: H/2 };
+
+// All live settings
+const S = { enabled:true, repulsion:true, trail:true, lines:true, speedMult:1, count:250, accentHue:0 };
+
+window.addEventListener('resize', () => { W = bgCanvas.width = window.innerWidth; H = bgCanvas.height = window.innerHeight; });
+window.addEventListener('mousemove', e => { mouse.x = e.clientX; mouse.y = e.clientY; });
+
+class Particle {
+  constructor() { this.reset(true); }
+  reset(init) {
+    this.x = Math.random() * W;
+    this.y = init ? Math.random() * H : (Math.random() < .5 ? -5 : H+5);
+    this.size = Math.random() * 2.5 + 0.3;
+    this.vx = (Math.random()-.5) * 0.6;
+    this.vy = (Math.random()-.5) * 0.6;
+    const hShift = (Math.random()-0.5)*28;
+    this.color = `hsl(${S.accentHue + hShift},100%,${Math.floor(Math.random()*25+55)}%)`;
+    this.alpha = Math.random()*.7+.2;
+    this.twinkle = Math.random()*Math.PI*2;
+    this.twinkleSpeed = Math.random()*.05+.01;
+    this.influence = Math.random()*80+30;
+  }
+  update() {
+    this.x += this.vx * S.speedMult;
+    this.y += this.vy * S.speedMult;
+    if (S.repulsion) {
+      const dx=this.x-mouse.x, dy=this.y-mouse.y, d=Math.sqrt(dx*dx+dy*dy);
+      if (d < this.influence) { const f=(this.influence-d)/this.influence, a=Math.atan2(dy,dx); this.x+=Math.cos(a)*f*3; this.y+=Math.sin(a)*f*3; }
+    }
+    if(this.x<-10)this.x=W+10; if(this.x>W+10)this.x=-10;
+    if(this.y<-10)this.y=H+10; if(this.y>H+10)this.y=-10;
+    this.twinkle += this.twinkleSpeed;
+  }
+  draw() {
+    const a = this.alpha*(0.6+0.4*Math.sin(this.twinkle));
+    ctx.save(); ctx.globalAlpha=a; ctx.fillStyle=this.color; ctx.shadowColor=this.color; ctx.shadowBlur=this.size*4;
+    ctx.beginPath(); ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fill(); ctx.restore();
+  }
+}
+
+class Trail {
+  constructor(x,y) {
+    this.x=x+(Math.random()-.5)*20; this.y=y+(Math.random()-.5)*20;
+    this.size=Math.random()*3+1; this.life=1; this.decay=Math.random()*.03+.02;
+    this.vx=(Math.random()-.5)*2; this.vy=(Math.random()-.5)*2;
+    this.color=`hsl(${S.accentHue+(Math.random()-0.5)*30},100%,70%)`;
+  }
+  update() { this.x+=this.vx; this.y+=this.vy; this.life-=this.decay; this.size*=.97; }
+  draw() {
+    ctx.save(); ctx.globalAlpha=this.life*.8; ctx.fillStyle=this.color; ctx.shadowColor=this.color; ctx.shadowBlur=10;
+    ctx.beginPath(); ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fill(); ctx.restore();
+  }
+}
+
+let particles = Array.from({length:250}, ()=>new Particle());
+const trails = [];
+let lx=mouse.x, ly=mouse.y;
+
+function loop() {
+  requestAnimationFrame(loop);
+  if (!S.enabled) { ctx.clearRect(0,0,W,H); return; }
+
+  ctx.fillStyle=`hsla(${S.accentHue},100%,2%,0.25)`; ctx.fillRect(0,0,W,H);
+  ctx.save();
+  let g=ctx.createRadialGradient(W*.3,H*.4,10,W*.3,H*.4,W*.5);
+  g.addColorStop(0,`hsla(${S.accentHue},100%,8%,0.06)`); g.addColorStop(1,'transparent'); ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+  g=ctx.createRadialGradient(W*.75,H*.6,10,W*.75,H*.6,W*.4);
+  g.addColorStop(0,`hsla(${S.accentHue},80%,6%,0.05)`); g.addColorStop(1,'transparent'); ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+  ctx.restore();
+
+  if (S.trail) {
+    const dx=mouse.x-lx, dy=mouse.y-ly;
+    if (dx*dx+dy*dy > 4) for(let i=0;i<3;i++) trails.push(new Trail(mouse.x,mouse.y));
+  }
+  lx=mouse.x; ly=mouse.y;
+
+  for(let i=trails.length-1;i>=0;i--){ trails[i].update(); trails[i].draw(); if(trails[i].life<=0)trails.splice(i,1); }
+
+  if (S.lines) {
+    ctx.save();
+    for(let i=0;i<particles.length;i++) for(let j=i+1;j<particles.length;j++){
+      const dx=particles[i].x-particles[j].x, dy=particles[i].y-particles[j].y, d=Math.sqrt(dx*dx+dy*dy);
+      if(d<80){ ctx.globalAlpha=(1-d/80)*.15; ctx.strokeStyle=`hsl(${S.accentHue},100%,65%)`; ctx.lineWidth=.5;
+        ctx.beginPath(); ctx.moveTo(particles[i].x,particles[i].y); ctx.lineTo(particles[j].x,particles[j].y); ctx.stroke(); }
+    }
+    ctx.restore();
+  }
+
+  particles.forEach(p=>{p.update();p.draw();});
+}
+loop();
+
+/* ── GAMES SYSTEM ── */
+let allGames = [];
+let filteredGames = [];
+
+// Games run locally from this project folder (no GitHub/external requests = no blocks)
+// type:"gn" → single .html files in html-main/html-main/
+// type:"vx" → folder-based games in gn-assets-main/gn-assets-main/{id}/
+const GN_CDN   = './html-main/html-main';
+const VX_CDN   = './gn-assets-main/gn-assets-main';
+
+const GAME_LIST = [
+  // ── HORROR ──────────────────────────────────────────────────────────
+  { src:'gn', id:'38',  title:"Five Nights at Freddy's",        tag:"horror" },
+  { src:'gn', id:'39',  title:"Five Nights at Freddy's 2",      tag:"horror" },
+  { src:'gn', id:'40',  title:"Five Nights at Freddy's 3",      tag:"horror" },
+  { src:'gn', id:'41',  title:"Five Nights at Freddy's 4",      tag:"horror" },
+  { src:'gn', id:'185', title:"FNAF: Sister Location",          tag:"horror" },
+  { src:'gn', id:'191', title:"FNAF: Pizzeria Simulator",       tag:"horror" },
+  { src:'gn', id:'190', title:"FNAF World",                     tag:"horror" },
+  { src:'gn', id:'192', title:"FNAF: Ultimate Custom Night",    tag:"horror" },
+  { src:'gn', id:'204', title:"Five Nights at Winston's",       tag:"horror" },
+  { src:'gn', id:'216', title:"That's Not My Neighbor",         tag:"horror" },
+  { src:'gn', id:'205', title:"Buckshot Roulette",              tag:"horror" },
+  { src:'gn', id:'195', title:"R.E.P.O.",                       tag:"horror" },
+  { src:'gn', id:'215', title:"Bendy and the Ink Machine",      tag:"horror" },
+  { src:'gn', id:'258', title:"A Bite at Freddy's",             tag:"horror" },
+  { src:'gn', id:'90',  title:"Granny",                         tag:"horror" },
+  { src:'gn', id:'125', title:"Granny 2",                       tag:"horror" },
+  { src:'gn', id:'126', title:"Granny 3",                       tag:"horror" },
+  { src:'gn', id:'64',  title:"Backrooms",                      tag:"horror" },
+
+  // ── ACTION ──────────────────────────────────────────────────────────
+  { src:'gn', id:'196', title:"ULTRAKILL",                      tag:"action",  file:'196-fixed' },
+  { src:'gn', id:'262', title:"Half-Life",                      tag:"action" },
+  { src:'gn', id:'263', title:"Quake III Arena",                tag:"action" },
+  { src:'gn', id:'58',  title:"1v1.LoL",                        tag:"action" },
+  { src:'gn', id:'0',   title:"Bowmasters",                     tag:"action" },
+  { src:'gn', id:'233', title:"Superhot",                       tag:"action" },
+  { src:'gn', id:'217', title:"Hotline Miami",                  tag:"action" },
+  { src:'gn', id:'267', title:"Pizza Tower",                    tag:"action" },
+  { src:'gn', id:'199', title:"Time Shooter",                   tag:"action" },
+  { src:'gn', id:'200', title:"Time Shooter 2",                 tag:"action" },
+  { src:'gn', id:'201', title:"Time Shooter 3: SWAT",           tag:"action" },
+  { src:'gn', id:'203', title:"DOOM",                           tag:"action" },
+  { src:'gn', id:'286', title:"Endoparasitic",                  tag:"action" },
+
+  // ── ARCADE ──────────────────────────────────────────────────────────
+  { src:'gn', id:'198', title:"Slope",                          tag:"arcade" },
+  { src:'gn', id:'27',  title:"Geometry Dash",                  tag:"arcade" },
+  { src:'gn', id:'177', title:"Run 3",                          tag:"arcade" },
+  { src:'gn', id:'175', title:"Run 1",                          tag:"arcade" },
+  { src:'gn', id:'176', title:"Run 2",                          tag:"arcade" },
+  { src:'gn', id:'8',   title:"Friday Night Funkin'",           tag:"arcade" },
+  { src:'gn', id:'10',  title:"Temple Run 2",                   tag:"arcade" },
+  { src:'gn', id:'11',  title:"Stickman Hook",                  tag:"arcade" },
+  { src:'gn', id:'57',  title:"Monkey Mart",                    tag:"arcade" },
+  { src:'gn', id:'24',  title:"Crossy Road",                    tag:"arcade" },
+  { src:'gn', id:'17',  title:"Magic Tiles 3",                  tag:"arcade" },
+  { src:'gn', id:'153', title:"Flappy Dunk",                    tag:"arcade" },
+  { src:'gn', id:'129', title:"Flappy Bird",                    tag:"arcade" },
+  { src:'gn', id:'9',   title:"Sprunki",                        tag:"arcade" },
+  { src:'gn', id:'12',  title:"Subway Surfers",                 tag:"arcade" },
+  { src:'gn', id:'81',  title:"Cluster Rush",                   tag:"arcade" },
+  { src:'gn', id:'206', title:"Tunnel Rush",                    tag:"arcade" },
+  { src:'gn', id:'119', title:"Snow Rider 3D",                  tag:"arcade" },
+  { src:'gn', id:'164', title:"Crazy Cattle 3D",                tag:"arcade" },
+  { src:'gn', id:'1',   title:"OvO",                            tag:"arcade" },
+  { src:'gn', id:'2',   title:"OvO 2",                          tag:"arcade" },
+  { src:'gn', id:'130', title:"osu!",                           tag:"arcade" },
+  { src:'gn', id:'7',   title:"Jetpack Joyride",                tag:"arcade" },
+  { src:'gn', id:'13',  title:"Attack Hole",                    tag:"arcade" },
+  { src:'gn', id:'208', title:"Rolly Vortex",                   tag:"arcade" },
+
+  // ── RACING ──────────────────────────────────────────────────────────
+  { src:'gn', id:'35',  title:"Drive Mad",                      tag:"racing" },
+  { src:'gn', id:'96',  title:"Moto X3M",                       tag:"racing" },
+  { src:'gn', id:'97',  title:"Moto X3M 2",                     tag:"racing" },
+  { src:'gn', id:'98',  title:"Moto X3M 3",                     tag:"racing" },
+  { src:'gn', id:'99',  title:"Moto X3M Spooky Land",           tag:"racing" },
+  { src:'gn', id:'100', title:"Moto X3M Winter",                tag:"racing",  file:'100-f' },
+  { src:'gn', id:'124', title:"Moto X3M Pool Party",            tag:"racing" },
+  { src:'gn', id:'276', title:"Drift Boss",                     tag:"racing" },
+  { src:'gn', id:'173', title:"Drift Hunters",                  tag:"racing" },
+  { src:'gn', id:'157', title:"Hill Climb Racing",              tag:"racing" },
+  { src:'gn', id:'266', title:"Speed Stars",                    tag:"racing" },
+  { src:'gn', id:'278', title:"Madalin Stunt Cars 2",           tag:"racing" },
+  { src:'gn', id:'279', title:"Madalin Stunt Cars 3",           tag:"racing" },
+  { src:'gn', id:'123', title:"Poly Track",                     tag:"racing" },
+  { src:'gn', id:'305', title:"Tanuki Sunset",                  tag:"racing" },
+
+  // ── SANDBOX ─────────────────────────────────────────────────────────
+  { src:'gn', id:'194', title:"People Playground",              tag:"sandbox", file:'194-a' },
+  { src:'gn', id:'181', title:"Minecraft 1.8.8",                tag:"sandbox" },
+  { src:'gn', id:'182', title:"Minecraft 1.12.2",               tag:"sandbox" },
+  { src:'gn', id:'183', title:"Minecraft 1.21.4",               tag:"sandbox" },
+  { src:'gn', id:'172', title:"Melon Playground",               tag:"sandbox" },
+  { src:'gn', id:'309', title:"Sandboxels",                     tag:"sandbox" },
+  { src:'gn', id:'188', title:"Scrap Metal 3",                  tag:"sandbox", file:'188e' },
+  { src:'gn', id:'174', title:"WorldBox",                       tag:"sandbox" },
+  { src:'gn', id:'87',  title:"Emulator.JS",                    tag:"sandbox" },
+
+  // ── ADVENTURE ───────────────────────────────────────────────────────
+  { src:'gn', id:'189', title:"Doki Doki Literature Club",      tag:"adventure" },
+  { src:'gn', id:'259', title:"Class of '09",                   tag:"adventure" },
+  { src:'gn', id:'166', title:"Bad Parenting",                  tag:"adventure" },
+  { src:'gn', id:'184', title:"Undertale",                      tag:"adventure" },
+  { src:'gn', id:'187', title:"Papers, Please",                 tag:"adventure" },
+  { src:'gn', id:'260', title:"RE:RUN",                         tag:"adventure" },
+  { src:'gn', id:'302', title:"Little Runmo",                   tag:"adventure" },
+  { src:'gn', id:'65',  title:"Baldi's Basics",                 tag:"adventure" },
+  { src:'gn', id:'70',  title:"BitLife",                        tag:"adventure" },
+  { src:'gn', id:'254', title:"Balatro",                        tag:"adventure" },
+
+  // ── PUZZLE ──────────────────────────────────────────────────────────
+  { src:'gn', id:'165', title:"Cheese Chompers 3D",             tag:"puzzle" },
+  { src:'gn', id:'193', title:"Do NOT Take This Cat Home",      tag:"puzzle" },
+  { src:'gn', id:'85',  title:"Cut the Rope",                   tag:"puzzle" },
+  { src:'gn', id:'82',  title:"Cookie Clicker",                 tag:"puzzle" },
+  { src:'gn', id:'103', title:"The World's Hardest Game",       tag:"puzzle" },
+  { src:'gn', id:'104', title:"The World's Hardest Game 3",     tag:"puzzle" },
+  { src:'gn', id:'112', title:"Wordle",                         tag:"puzzle" },
+  { src:'gn', id:'169', title:"Bloxorz",                        tag:"puzzle" },
+  { src:'gn', id:'274', title:"CircloO",                        tag:"puzzle" },
+  { src:'gn', id:'275', title:"CircloO 2",                      tag:"puzzle" },
+
+  // ── SPORTS ──────────────────────────────────────────────────────────
+  { src:'gn', id:'33',  title:"Retro Bowl",                     tag:"sports" },
+  { src:'gn', id:'34',  title:"Retro Bowl College",             tag:"sports" },
+  { src:'gn', id:'272', title:"Basketball Stars",               tag:"sports" },
+  { src:'gn', id:'108', title:"Tiny Fishing",                   tag:"sports" },
+  { src:'gn', id:'232', title:"Plants vs. Zombies",             tag:"sports" },
+  { src:'gn', id:'285', title:"Basket Bros",                    tag:"sports" },
+  // ── EXTRA FROM gn-assets (folder-based) ─────────────────────
+  { src:'vx', id:'702', title:"JavascriptPS1",                  tag:"sandbox" },
+  { src:'vx', id:'447', title:"Nijika's Ahoge",                 tag:"arcade"  },
+];
+
+function loadGames() {
+  // Build simple game list from static data, then sort alphabetically A→Z.
+  const mapped = GAME_LIST.map(g => {
+    const isGN  = g.src === 'gn';
+    const file  = g.file || g.id;
+    const url   = isGN
+      ? `${GN_CDN}/${file}.html`
+      : `${VX_CDN}/${g.id}/index.html`;
+    return {
+      id:    g.id,
+      src:   g.src,
+      title: g.title,
+      path:  url,
+      tag:   g.tag,
+    };
+  }).sort((a, b) =>
+    a.title.localeCompare(b.title, undefined, { sensitivity: 'base' })
+  );
+
+  allGames = mapped;
+  filteredGames = [...allGames];
+  renderGames(filteredGames);
+}
+
+function renderGames(games) {
+  const grid = document.getElementById('games-grid');
+  const emptyEl = document.getElementById('games-empty');
+  const countEl = document.getElementById('games-count');
+
+  grid.innerHTML = '';
+
+  if (games.length === 0) {
+    grid.style.display = 'none';
+    emptyEl.style.display = 'block';
+    countEl.textContent = '';
+    if (allGames.length === 0) {
+      document.getElementById('empty-title').textContent = 'No games yet';
+      document.getElementById('empty-sub').textContent = 'coming soon';
+    } else {
+      document.getElementById('empty-title').textContent = 'No games found';
+      document.getElementById('empty-sub').textContent = 'try a different search';
+    }
+    return;
+  }
+
+  grid.style.display = 'grid';
+  emptyEl.style.display = 'none';
+  countEl.textContent = `${games.length} game${games.length !== 1 ? 's' : ''}`;
+
+  games.forEach(game => {
+    const card = document.createElement('div');
+    card.className = 'game-card';
+    card.innerHTML = `
+      <div class="game-thumb">
+        ${game.thumbnail
+          ? `<img src="${game.thumbnail}" alt="${game.title}" loading="lazy" onerror="this.style.display='none'">`
+          : `<svg class="game-thumb-icon" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="13" rx="3.5"/><line x1="7" y1="12" x2="11" y2="12"/><line x1="9" y1="10" x2="9" y2="14"/><circle cx="16" cy="11.5" r="1" fill="rgba(255,100,100,0.4)" stroke="none"/><circle cx="18" cy="13.5" r="1" fill="rgba(255,100,100,0.4)" stroke="none"/></svg>`
+        }
+        <div class="game-thumb-play">
+          <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+      </div>
+      <div class="game-info">
+        <h3 title="${game.title}">${game.title}</h3>
+        ${game.description ? `<p>${game.description}</p>` : ''}
+        ${game.tag ? `<span class="game-tag">${game.tag}</span>` : ''}
+      </div>
+    `;
+    card.addEventListener('click', () => openGame(game));
+    grid.appendChild(card);
+  });
+}
+
+// Tag filter
+let activeTag = 'all';
+document.querySelectorAll('.tag-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tag-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeTag = btn.dataset.tag;
+    applyFilters();
+    playClick();
+  });
+});
+
+function applyFilters() {
+  const q = document.getElementById('game-search').value.trim().toLowerCase();
+  filteredGames = allGames.filter(g => {
+    const matchTag = activeTag === 'all' || g.tag === activeTag;
+    const matchSearch = !q || g.title.toLowerCase().includes(q) || (g.tag && g.tag.includes(q));
+    return matchTag && matchSearch;
+  });
+  renderGames(filteredGames);
+}
+
+// Search — replace old listener
+document.getElementById('game-search').addEventListener('input', applyFilters);
+
+// Open game: always load directly via iframe.src so everything stays simple and reliable
+function openGame(game) {
+  const overlay  = document.getElementById('game-overlay');
+  const frame    = document.getElementById('game-frame');
+  const titleEl  = document.getElementById('overlay-title');
+  const loading  = document.getElementById('game-loading');
+
+  titleEl.textContent = game.title;
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  playNav();
+
+  loading.style.display = 'flex';
+  frame.style.opacity   = '0';
+  frame.onload = null;
+  frame.removeAttribute('srcdoc');
+  frame.src = 'about:blank';
+  frame.onload = () => {
+    loading.style.display = 'none';
+    frame.style.opacity   = '1';
+  };
+  // Always just point the iframe at the GitHub Pages URL (works for both gn and vx games)
+  setTimeout(() => {
+    frame.src = game.path;
+  }, 60);
+}
+
+// Close overlay
+document.getElementById('overlay-close').addEventListener('click', () => {
+  const overlay = document.getElementById('game-overlay');
+  const frame   = document.getElementById('game-frame');
+  overlay.classList.remove('open');
+  setTimeout(() => {
+    frame.onload = null;
+    frame.removeAttribute('srcdoc');
+    frame.src = 'about:blank';
+  }, 300);
+  document.body.style.overflow = '';
+  playClick();
+});
+
+// ESC to close
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('overlay-close').click();
+});
+
+
+
+// Particle toggles
+document.getElementById('tog-particles').addEventListener('change', e => { S.enabled = e.target.checked; });
+document.getElementById('tog-repulsion').addEventListener('change', e => { S.repulsion = e.target.checked; });
+document.getElementById('tog-trail').addEventListener('change',     e => { S.trail = e.target.checked; });
+document.getElementById('tog-lines').addEventListener('change',     e => { S.lines = e.target.checked; });
+
+// Particle speed
+document.getElementById('sli-speed').addEventListener('input', e => { S.speedMult = e.target.value / 5; });
+
+// Particle density — rebuilds particle array
+document.getElementById('sel-density').addEventListener('change', e => {
+  const n = parseInt(e.target.value);
+  particles.length = 0;
+  for(let i=0;i<n;i++) particles.push(new Particle());
+});
+
+// UI transparency — changes background alpha on all glass surfaces
+document.getElementById('ui-transparency').addEventListener('change', e => {
+  const v = parseFloat(e.target.value);
+  document.querySelectorAll('.glass-card').forEach(el => {
+    el.style.background = `rgba(10,0,0,${v})`;
+  });
+  document.querySelectorAll('.nav-item').forEach(el => {
+    el.style.background = `rgba(10,0,0,${v})`;
+  });
+});
+
+// Accent colour swatches — rewrites CSS variables live + updates all canvas elements
+document.querySelectorAll('#accent-swatches .swatch').forEach(sw => {
+  sw.addEventListener('click', () => {
+    document.querySelectorAll('#accent-swatches .swatch').forEach(s => s.classList.remove('selected'));
+    sw.classList.add('selected');
+    const h = parseInt(sw.dataset.hue);
+
+    // Update particle engine hue
+    S.accentHue = h;
+
+    // Rebuild particles with new color
+    particles.length = 0;
+    for(let i=0;i<S.count;i++) particles.push(new Particle());
+
+    // Update CSS variables
+    const root = document.documentElement;
+    root.style.setProperty('--red-bright',    `hsl(${h},100%,58%)`);
+    root.style.setProperty('--border',        `hsla(${h},70%,35%,0.22)`);
+    root.style.setProperty('--border-bright', `hsla(${h},90%,60%,0.45)`);
+    root.style.setProperty('--text-sub',      `hsla(${h},80%,82%,0.7)`);
+    root.style.setProperty('--bg',            `hsl(${h},100%,2%)`);
+    root.style.setProperty('--surface',       `hsla(${h},90%,4%,0.72)`);
+    root.style.setProperty('--surface-hover', `hsla(${h},90%,6%,0.88)`);
+
+    // Update body background
+    document.body.style.background = `hsl(${h},100%,2%)`;
+
+    // Update title text-shadow
+    const title = document.querySelector('.title');
+    title.style.textShadow = `0 0 20px hsla(${h},100%,60%,0.9), 0 0 60px hsla(${h},100%,50%,0.6), 0 0 120px hsla(${h},100%,40%,0.4)`;
+
+    // Update title bubble outline
+    // inject a dynamic style for ::before pseudo
+    let dynStyle = document.getElementById('dyn-accent-style');
+    if (!dynStyle) { dynStyle = document.createElement('style'); dynStyle.id='dyn-accent-style'; document.head.appendChild(dynStyle); }
+    dynStyle.textContent = `.title::before { -webkit-text-stroke: 3px hsla(${h},100%,65%,0.5) !important; }
+    .screen-header h1 { text-shadow: 0 0 16px hsla(${h},100%,60%,0.8), 0 0 50px hsla(${h},100%,40%,0.5) !important; }`;
+  });
+});
+
+/* ── AUDIO: Web Audio API UI sounds ── */
+let audioCtx = null;
+let soundEnabled = false;
+let masterVolume = 0.7;
+
+function getAudioCtx() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+  return audioCtx;
+}
+
+function playTone(freq, type, duration, vol, fadeOut) {
+  if (!soundEnabled) return;
+  const ac = getAudioCtx();
+  const osc = ac.createOscillator();
+  const gain = ac.createGain();
+  osc.connect(gain); gain.connect(ac.destination);
+  osc.type = type;
+  osc.frequency.setValueAtTime(freq, ac.currentTime);
+  gain.gain.setValueAtTime(vol * masterVolume, ac.currentTime);
+  if (fadeOut) gain.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + duration);
+  osc.start(ac.currentTime);
+  osc.stop(ac.currentTime + duration);
+}
+
+function playClick() {
+  // Short crisp click: two fast tones
+  playTone(440, 'sine', 0.07, 0.18, true);
+  setTimeout(() => playTone(600, 'sine', 0.05, 0.10, true), 30);
+}
+
+function playHover() {
+  playTone(320, 'sine', 0.08, 0.06, true);
+}
+
+function playNav() {
+  // Satisfying nav switch: descending chord
+  playTone(500, 'sine', 0.12, 0.14, true);
+  setTimeout(() => playTone(400, 'sine', 0.10, 0.10, true), 60);
+}
+
+// Attach sounds to nav items
+document.querySelectorAll('.nav-item').forEach(n => {
+  n.addEventListener('mouseenter', playHover);
+  n.addEventListener('click', playNav);
+});
+
+// Attach sounds to all interactive controls
+document.querySelectorAll('.toggle input, .setting-select, .swatch').forEach(el => {
+  el.addEventListener('mouseenter', playHover);
+  el.addEventListener('change', playClick);
+  el.addEventListener('click', playClick);
+});
+
+// Toggle sounds on/off
+document.getElementById('tog-sounds').addEventListener('change', e => {
+  soundEnabled = e.target.checked;
+  if (soundEnabled) {
+    // play a confirmation sound on enable
+    soundEnabled = true;
+    playTone(520, 'sine', 0.15, 0.2, true);
+    setTimeout(() => playTone(660, 'sine', 0.12, 0.15, true), 80);
+  }
+});
+
+// Volume slider
+document.getElementById('sli-volume').addEventListener('input', e => {
+  masterVolume = e.target.value / 10;
+});
+</script>
+</body>
+</html>
